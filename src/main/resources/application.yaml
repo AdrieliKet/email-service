@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: email
+  datasource:
+    url: jdbc:postgresql://localhost:5433/email
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    addresses: amqps://ihsrlgki:fc8cWdBXgyltb4xpmtZEwZlPAe5Bfc0-@jaragua.lmq.cloudamqp.com/ihsrlgki
+
+server:
+  port: 8082
+
+broker:
+  queue:
+    email:
+      name: default.email
